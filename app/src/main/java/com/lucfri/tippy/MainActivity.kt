@@ -109,8 +109,6 @@ class MainActivity : AppCompatActivity() {
 
         val totalAmount = floor(tvTotalAmount.text.toString().toDouble())
 
-        Log.i(TAG, "$totalAmount")
-
         val splitValue = divideAmountByParticipants(totalAmount)
 
         tvTotalAmount.text = "%.2f".format(totalAmount)
@@ -123,8 +121,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         val totalAmount = ceil(tvTotalAmount.text.toString().toDouble())
-
-        Log.i(TAG, "$totalAmount")
 
         val splitValue = divideAmountByParticipants(totalAmount)
 
